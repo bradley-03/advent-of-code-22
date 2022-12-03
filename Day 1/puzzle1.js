@@ -12,5 +12,9 @@ for (let line of input) {
         amount = amount + parseInt(line)
     }
 }
-
 console.log(Math.max(...totals))
+
+const top3 = totals.sort((a, b) => b - a).slice(0, 3)
+console.log(top3.reduce((a, c) => a + c))
+
+console.log(totals)
