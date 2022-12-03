@@ -12,9 +12,9 @@ for (let line of input) {
         amount = amount + parseInt(line)
     }
 }
+// Puzzle 1
 console.log(Math.max(...totals))
 
+// Puzzle 2 
 const top3 = totals.sort((a, b) => b - a).slice(0, 3)
 console.log(top3.reduce((a, c) => a + c))
-
-console.log(totals)
