@@ -1,5 +1,5 @@
 const fs = require('fs')
-const input = fs.readFileSync('input.txt', 'utf8').split('\n')
+const input = fs.readFileSync('Day 1/input.txt', 'utf8').split('\n')
 
 let amount = 0
 const totals = []
