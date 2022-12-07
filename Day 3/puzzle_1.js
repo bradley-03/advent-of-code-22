@@ -36,4 +36,9 @@ for (const rucksack of rucksacks) {
     }
 }
 
-console.log(totals.reduce((a, b) => a + b))
+console.log(totals.reduce((a, b) => a + b)) // puzzle one output
+
+const badges = []
+for (let letter of alphabet) {
+
+}
