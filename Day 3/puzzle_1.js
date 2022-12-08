@@ -38,7 +38,18 @@ for (const rucksack of rucksacks) {
 
 console.log(totals.reduce((a, b) => a + b)) // puzzle one output
 
-const badges = []
-for (let letter of alphabet) {
-
+const groups = []
+for (let i = 0; i < input.length; i += 3) {
+    const chunk = input.slice(i, i + 3);
+    groups.push(chunk)
 }
+
+let badgeTotals = 0
+for (let group of groups) {
+    const commonElements = group[0].split('').filter((element) => {
+        return group[1].split('').includes(element) && group[2].split('').includes(element);
+    });
+    badgeTotals += getPriority(commonElements[0])
+}
+
+console.log(badgeTotals) // puzzle two output
