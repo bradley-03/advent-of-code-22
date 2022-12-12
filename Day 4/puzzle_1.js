@@ -15,3 +15,12 @@ for (let pair of pairs) {
 }
 
 console.log(counter) // puzzle one output
+
+let puzzle2_counter = 0
+for (let pair of pairs) {
+    if (!(parseInt(pair[0][1]) < parseInt(pair[1][0]) || parseInt(pair[1][1]) < parseInt(pair[0][0]))) {
+        puzzle2_counter++
+    }
+}
+
+console.log(puzzle2_counter) // puzzle two output
