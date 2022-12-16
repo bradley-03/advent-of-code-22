@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 const input = fs.readFileSync('Day 6/input.txt', 'utf8')
 
 function hasDuplicates (str) {
@@ -15,8 +15,8 @@ function hasDuplicates (str) {
 
 let count = 0
 for (let i = 0; i < input.length; i++) {
-    if (hasDuplicates(input.slice(i, i + 4)) == false) {
-        console.log(i + 4)
+    if (hasDuplicates(input.slice(i, i + 14)) == false) {
+        console.log(i + 14)
         break
     }
 }
